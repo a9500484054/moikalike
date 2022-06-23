@@ -1,0 +1,92 @@
+.moikalike-cofe {
+    padding: 36px 30px;
+
+    background-image: url('../images/jpg/bg-coffee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__title {
+        font-family: $font-family--playfair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: -0.015em;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+    &__text {
+        max-width: 500px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: $color-white;
+        margin-bottom: 30px;
+    }
+    &__list {
+        max-width: 319px;
+    }
+    &__item {
+        
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 132%;
+        color: $color-white;
+        margin-bottom: 13px;
+
+    }
+    &__icon {
+        color: $color-main;
+        margin-right: 15px;
+    }
+    &__name {
+
+    }
+    &__price {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .moikalike-cofe {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 145px;
+        &__title {
+            flex-basis: 100%;
+            font-size: 60px;
+        }
+        &__text {
+            flex-basis: 50%;
+            font-size: 18px;
+            padding-right: 30px;
+            margin-bottom: 0;
+        }
+        &__list {
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .moikalike-cofe {
+        padding: 75px;
+        padding-bottom: 245px;
+        &__text {
+            font-size: 25px;
+        }
+        &__item {
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+        &__list {
+            max-width: 419px;
+        }
+
+    }
+
+}

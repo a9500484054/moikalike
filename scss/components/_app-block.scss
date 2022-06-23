@@ -1,0 +1,187 @@
+.moikalike-app {
+    padding: 0 30px;
+    padding-bottom: 80px;
+    &__title {
+        margin-bottom: 22px;
+        font-family: $font-family--playfair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: $color-white;
+        &--dest {
+            display: none;
+        }
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 33px;
+    }
+    &__img {
+        margin-right: 32px;
+    }
+    &__text {
+        padding-left: 10px;
+        width: 152px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: $color-white;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        &--dest {
+            display: none;
+        }
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 152px;
+        height: 42px;
+        padding-left: 66px;
+
+        font-family: $font-family--ibm;
+        font-weight: 400;
+        font-size: 10.36px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $color-white;
+
+        background-color: $color-bg-main;
+        border: 1px solid $color-white;
+        border-radius: 11px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-repeat: no-repeat;
+        }
+    }
+    &__item:first-child {
+        margin-right: 10px;
+        a {
+            &::after {
+                top: 6px;
+                left: 27px;
+    
+                width: 21px;
+                height: 25px;
+    
+                background-image: url('../images/png/apple.png');
+                background-size: 21px 25px;
+            }
+        }
+    }
+    &__item:last-child {
+        a {
+            &::after {
+                top: 10px;
+                left: 27px;
+    
+                width: 21px;
+                height: 22px;
+    
+                background-image: url('../images/png/google.png');
+                background-size: 21px 22px;
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    .moikalike-app {
+        &__title {
+            font-size: 36px;
+        }
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .moikalike-app {
+        &__wrap {
+            align-items: flex-start;
+
+        }
+        &__wrap-dest {
+            margin-left: 100px;
+        }
+        &__title {
+            width: 334px;
+            display: none;
+            margin-bottom: 60px;
+            font-size: 42px;
+            &--dest {
+                display: block;
+            }
+        }
+        &__text {
+            width: 267px;
+            font-size: 18px;
+            margin-bottom: 150px;
+        }
+        &__list {
+            display: none;
+            justify-content: flex-start;
+            flex-direction: column;
+            &--dest {
+                display: flex;
+            }
+        }
+        &__link {
+            width: 298px;
+            height: 82px;
+            padding-left: 116px;
+            font-size: 20px;
+        }
+        &__item:first-child {
+            margin-bottom: 20px;
+            a {
+                &::after {
+                    top: 12px;
+                    left: 51px;
+        
+                    width: 41px;
+                    height: 49px;
+        
+                    background-size: 41px 49px;
+                }
+            }
+        }
+        &__item:last-child {
+            a {
+                &::after {
+                    top: 17px;
+                    left: 51px;
+        
+                    width: 42px;
+                    height: 45px;
+        
+                    background-size: 42px 45px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .moikalike-app {
+        &__title {
+            width: 458px;
+            font-size: 60px;
+        }
+        &__text {
+            width: 368px;
+            font-size: 25px;
+        }   
+    }
+}

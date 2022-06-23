@@ -1,0 +1,497 @@
+.moikalike-form {
+    padding: 70px 5px;
+    &__title {
+        margin-left: 31px;
+        font-family: $font-family--playfair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: -0.015em;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+    &__item-btn {
+        display: flex;
+        align-items: center;
+        padding-left: 31px;
+        padding-right: 24px;
+        height: 56px;
+        border: 1px solid $color-main;
+        cursor:pointer;
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: $color-main;
+        }
+        span:nth-child(1) {
+            margin-right: 7px;
+        }
+        span:nth-child(2) {
+            margin-right: auto;
+        }
+        .icon-arrow {
+            font-size: 10px;
+            color: $color-main;
+            transform: rotate(-90deg);
+            transition-duration: .5s;
+            &--active {
+                transform: rotate(0deg);
+            }
+        }
+        
+
+    }
+    
+}
+
+.item-content {
+    padding-left: 36px;
+    padding-right: 26px;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+    transition-duration: .5s;
+    &__text {
+        margin-bottom: 45px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: $color-white;
+    }
+    &__hidden-btn {
+        
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 132%;
+        color: #9C9C9C;
+        margin-bottom: 44px;
+        margin-top: 20px;
+        text-decoration: underline dashed;
+    }
+    .hidden-btn {
+        &-open {
+            display: none;
+        }
+        &-close {
+            display: none;
+        }
+        &--active {
+            display: block;
+        }
+    }
+}
+
+.item-content-one--active {
+    height: auto;
+}
+.item-content-two--active {
+    height: auto;
+}
+
+
+
+
+@media (min-width: $screen-table) {
+    .item-content-one--active {
+        height: auto;
+    }
+    .item-content-two--active {
+        height:auto;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+
+    .item-content-two--active {
+        height: auto;
+    }
+
+    .item-content-wrap {
+        height: 340px;
+        overflow: hidden;
+    }
+}
+
+
+.item-content-wrap {
+    height: 440px;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+.item-content-wrap--active {
+    height: auto;
+    transition-duration: .5s;
+}
+
+.service-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 132%;
+    color: $color-white;
+    cursor: pointer;
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 1px;
+        left: 1px;
+
+        display: block;
+        width: 100%;
+        height: .5px;
+
+        background-color: #E0E0E0;
+
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+    &__icon {
+        margin-right: 7px;
+        font-size: 25px;
+    }
+    &__price {
+        margin-left: 29px;
+        margin-bottom: 12px;
+        span {
+            margin-left: 9px;
+        }
+    }
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 151px;
+        height: 40px;
+        font-weight: 300;
+        font-size: 14;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-main;
+        background: $color-bg-main;
+        border: 1px solid $color-main;
+        border-radius: 12px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: $color-main;
+            color: $color-text-black;
+        }
+        &:active {
+            color: $color-main;
+            background: $color-bg-main;
+        }
+    }
+    &__input {
+        display: none;
+    }
+    &__input:checked + &__checkbox {
+        background: $color-main;
+        color: $color-text-black;
+    }
+}
+
+.design {
+    display: grid; 
+    max-width: 320px;
+    margin: 20px auto;
+    grid-auto-flow: row dense; 
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr min-content; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 36px 26px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
+    justify-items: start; 
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: $font-family--playfair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: $color-white;
+        span {
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+            font-size: 14px;
+        }
+    }
+    &__icon {
+        margin-right: 8px;
+        color: $color-main;
+    }
+}
+
+.feedback-form {
+    padding: 0 30px 0 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 369px;
+    margin: 0 auto;
+    &__text {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+
+        color: $color-white;
+    }
+    &__input {
+        padding: 10px;
+        background: $color-white;
+        border: 1px solid $color-main;
+        border-radius: 7px;
+        margin-bottom: 17px;
+    }
+    &__label {
+        display: flex;
+        cursor: pointer;
+
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked + &__checkbox-elem::after {
+        opacity: 1;
+    }
+
+    &__checkbox-elem {
+        position: relative;
+        display: inline-block;
+        min-width: 20px;
+        height: 20px;
+        margin-right: 11px;
+        border: 1px solid $color-main;
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: 4px;
+            left: 2px;
+
+            display: block;
+            width: 13px;
+            height: 10px;
+    
+            background-image: url('../images/svg/ok.svg');
+            background-repeat: no-repeat;
+
+            opacity: 0;
+            transition-duration: .5s;
+        }
+    }
+    &__checkbox-text {
+        margin-bottom: 33px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 102%;
+        letter-spacing: 0.03em;
+
+        color: $color-white;
+    }
+    &__btn {
+        height: 40px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-text-black;
+        background-color: $color-main;
+        border-radius: 10px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color: $color-main;
+            background: $color-bg-main;
+            border: 1px solid $color-main;
+        }
+        &:active {
+            color: $color-text-black;
+            background: $color-main;
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    .moikalike-form {
+        &__item-btn {
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .design {
+        &__item {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .moikalike-form {
+        &__item-btn {
+            height: 82px;
+            span {
+                font-size: 18px;
+            }
+        }
+        &__title {
+            font-size: 60px;
+        }
+    }
+    
+    .item-content {
+        &__text {
+            font-size: 25px;
+        }
+        &__hidden-btn {
+            font-size: 25px;
+
+        }
+    }
+
+    .service-item {
+        font-size: 25px;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+            display: none;
+        }
+        &__wrap {
+            flex-direction: row;
+            align-items: center;
+        }
+        &__time {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            margin-right: 60px;
+        }
+        &__icon {
+            margin-right: 9px;
+            font-size: 43px;
+            color: $color-main;
+        }
+        &__price {
+            margin-left: 29px;
+            margin-right: 48px;
+            margin-bottom: 0;
+            color: $color-main;
+            span {
+                margin-left: 9px;
+            }
+        }
+        &__checkbox {
+            width: 191px;
+            height: 49px;
+        }
+    }
+
+
+    .feedback-form {
+        max-width: 530px;
+    }
+
+
+    .item-content:nth-child(4) {
+        display: flex;
+        justify-content: center;
+        max-width: 1000px; 
+        margin: 0 auto;
+        padding-top: 58px;
+
+    }
+    .design {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+            
+    }
+
+
+}
+
+@media (min-width: $screen-desktop) {
+    .design {
+        &__item {
+            font-size: 45px;
+            margin-bottom: 36px;
+            span {
+                top: 34px;
+                left: 59px;            
+                font-size: 20px;
+            }
+        }
+        &__icon {
+            font-size: 50px;
+        }
+    }
+
+    .feedback-form {
+        max-width: 600px;
+        &__text {
+            font-size: 25px;
+            margin-bottom: 37px;
+        }
+        &__input {
+            padding: 20px;
+            margin-bottom: 29px;
+        }
+        &__checkbox-elem {
+            min-width: 30px;
+            height: 30px;
+            &::after {
+                width: 30px;
+                height: 30px;
+                background-size: 70%;
+                bottom: -7px;
+                left: 3px;
+            }
+        }
+        &__label {
+            margin-bottom: 50px;
+        }
+        &__checkbox-text {
+            font-size: 13px;
+        }
+        &__btn {
+            width: 546px;
+            height: 80px;
+            font-size: 18px;
+        }
+    }
+}
+
+

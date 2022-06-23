@@ -1,0 +1,291 @@
+.moikalike-heder {
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__menu-btn {
+        margin-left: auto;
+    }
+}
+
+.header-feedback {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    &__list {
+        display: flex;
+        margin-bottom: 7px;
+        margin-top: 30px;
+    }
+    &__item {
+        display: flex;
+    }
+    &__item:first-child {
+        margin-right: 30px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 102%;
+        letter-spacing: 0.03em;
+        color: $color-white;
+        &--fb {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__icon {
+        color: $color-white;
+        font-size: 19px;
+        margin-right: 16px;
+    }
+    &__btn {
+        width: 154px;
+        height: 35px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-text-black;
+        background-color: $color-main;
+        border-radius: 10px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color: $color-main;
+            background: $color-bg-main;
+            border: 1px solid $color-main;
+        }
+        &:active {
+            color: $color-text-black;
+            background: $color-main;
+            border: none;
+        }
+    }
+}
+
+.icon-phone {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/svg/phone.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.moikalike-heder__nav-wrap {
+    position: absolute;
+    top:90px;
+    left: -1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    background-color: $color-bg-main;
+    z-index: 999;
+    transition-duration: .5s;
+    &--active {
+        left: 0;
+    }
+    .menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__link {
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $color-white;
+            transition-duration: .5s;
+            &:hover,
+            &:focus {
+                color: $color-main;
+                
+            }
+            &:active {
+                color: $color-white;
+            }
+            &--active {
+                color: $color-main;
+            }
+        }
+    }
+
+    .color-list {
+        display: flex;   
+        &__item:first-child {
+            margin-right: 8px;
+        }
+        &__button {
+            width: 30px;
+            height: 30px;
+            border: 0.5px solid #FFFFFF;
+            border-radius: 50px;
+            &--black {
+                background-color: $color-bg-main;
+                border: 0.5px solid $color-white;
+            }
+            &--white {
+                background-color: $color-white;
+                border: 0.5px solid $color-bg-main;
+            }
+        }
+    }
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    &__elem {
+        display: block;
+        height: 2px;
+        width: 30px;
+        background-color: $color-main;
+        transition-duration: .5s;
+    }
+    &__elem:first-child {
+        margin-bottom: 6px;
+    }
+}
+
+.menu-btn--active {
+    position: relative; 
+    span {
+        position: absolute;
+        top: 1px;
+        left: -30px;
+        background-color: $color-white;
+        margin: 0;
+    }
+    span:first-child {
+        transform: rotate(-135deg);
+    }
+    span:last-child {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (min-width: 360px) {
+    .header-feedback {
+        &__text {
+            font-size: 10px;
+        }
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .moikalike-heder {
+        &__menu-btn {
+            display: none;
+        }
+    }
+    .moikalike-heder__nav-wrap {
+        position: static;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        margin-left: auto;
+        padding: 0;
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 10px;
+            &__item {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+            &__item:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .header-feedback {
+        z-index: 89999;
+        &__list {
+            margin-top: -34px
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .moikalike-heder {
+        padding: 10px 50px;
+        padding-bottom: 43px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .moikalike-heder__nav-wrap { 
+        margin-left: 0; 
+    }
+
+    .moikalike-heder__nav-wrap {
+        margin-top: 50px;
+        .menu-list {
+            margin-bottom: 14px;
+            &__item {
+                margin-right: 60px;
+            }
+        }
+        
+        .color-list {
+            &__button {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+
+    .header-feedback {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 7px;
+            margin: 0;
+        }
+        &__item {
+            margin-bottom: 14px;
+        }
+        &__item:last-child {
+            margin-bottom: 33px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__icon {
+            color: $color-white;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        &__btn {
+            width: 225px;
+        }
+        .icon-phone {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

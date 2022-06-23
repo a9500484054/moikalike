@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <header class="moikalike-heder">
+
+        <a class="moikalike-heder__logo" href="#">
+            <picture>
+                <source type="image/webp" srcset="images/webp/logo-dest.webp" media="(min-width: 768px)">
+                <source type="image/webp" srcset="images/webp/logo-mob.webp">
+                <source srcset="images/png/logo-dest.png" media="(min-width: 768px)">
+                <img src="images/png/logo-mob.png" alt="фото"/>
+            </picture>
+        </a>
+
+        <button class="menu-btn moikalike-heder__menu-btn" id="moikalike-menu-btn">
+            <span class="menu-btn__elem"></span>
+            <span class="menu-btn__elem"></span>
+        </button>
+        
+        <nav class="moikalike-heder__nav-wrap" id="moikalike-menu">
+            <ul class="menu-list moikalike-heder__menu-list">
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Бронирование</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Прайс-лист</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Бонусы</a></li>
+            </ul>
+            <ul class="color-list moikalike-heder__color-list">
+                <li class="color-list__item"><button class="color-list__button color-list__button--black"><span class="visually-hidden">Темная цветовая схема</span></button></li>
+                <li class="color-list__item"><button class="color-list__button color-list__button--white"><span class="visually-hidden">Светлая цветовая схема</span></button></li>
+            </ul>
+        </nav>
+
+        <div class="header-feedback moikalike-heder__header-feedback">
+            <ul class="header-feedback__list">
+                <li class="header-feedback__item">
+                    <i class="header-feedback__icon icon-location"></i>
+                    <span class="header-feedback__text header-feedback__text--fb"><span>г. Тверь</span><span>ул. Коминтерна 77Б</span></span>
+                </li>
+                <li class="header-feedback__item"><a class="header-feedback__text" href="#"><i class="header-feedback__icon icon-phone"></i>+7 (999) 999 99 99</a></li>
+            </ul>
+            <button class="header-feedback__btn">Заказать звонок</button>
+        </div>
+
+
+    </header>
+    
+    <main>
+
+        <h1 class="visually-hidden">Самая технологичная автомойка в г. Твери</h1>
+
+        <section class="moikalike-hero">
+            <picture>
+                <source type="image/webp" srcset="images/webp/hero-bg-dest.webp" media="(min-width: 360px)">
+                <source type="image/webp" srcset="images/webp/hero-bg-mob.webp">
+                <source srcset="images/jpg/hero-bg-dest.jpg" media="(min-width: 360px)">
+                <img class="moikalike-hero__img" src="images/jpg/hero-bg-mob.jpg" alt="фото"/>
+            </picture>
+            <button class="moikalike-hero__pause">
+                <i class="icon-pause"></i>
+            </button>
+            <div class="moikalike-hero__main-wrapp">
+                <div class="moikalike-hero__info">
+                    <h2 class="moikalike-hero__title">MойкаLike</h2>
+                    <p class="moikalike-hero__text">Благодаря обработке поверхности горячим воздухом, подобранным химическим составом и современному оборудованию мы с лёгкостью удалим грязь и вернём красоту вашему авто.</p>
+                </div>
+                <ul class="moikalike-hero__list">
+                    <li class="static-block moikalike-hero__item">
+                        <ul class="static-block__list">
+                            <li class="static-block__item">1</li>
+                            <li class="static-block__item">5</li>
+                            <li class="static-block__item">4</li>
+                        </ul>
+                        <span class="static-block__text">Машин помыли</span>
+                    </li>
+                    <li class="static-block moikalike-hero__item">
+                        <ul class="static-block__list">
+                            <li class="static-block__item">9</li>
+                            <li class="static-block__item">0</li>
+                            <li class="static-block__item">6</li>
+                        </ul>
+                        <span class="static-block__text">Машин помыли</span>
+                    </li>
+                    <li class="static-block moikalike-hero__item">
+                        <ul class="static-block__list">
+                            <li class="static-block__item">7</li>
+                            <li class="static-block__item">2</li>
+                            <li class="static-block__item">3</li>
+                        </ul>
+                        <span class="static-block__text">Машин помыли</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="moikalike-app">
+            <h2 class="moikalike-app__title">Теперь у нас есть приложение!</h2>
+            <div class="moikalike-app__wrap">
+                <picture>
+                    <source type="image/webp" srcset="images/webp/iphone-12-mini-dest.webp" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="images/webp/iphone-12-mini.webp">
+                    <source srcset="images/png/iphone-12-mini-dest.png" media="(min-width: 768px)">
+                    <img class="moikalike-app__img" src="images/png/iphone-12-mini.png" alt="фото"/>
+                </picture>
+                <div class="moikalike-app__wrap-dest">
+                    <h2 class="moikalike-app__title moikalike-app__title--dest">Теперь у нас есть приложение!</h2>
+                    <p class="moikalike-app__text">Чтобы МойкаLike всегда была под рукой, а записаться к нам вы могли за считанные секунды.</p>
+                    <ul class="moikalike-app__list moikalike-app__list--dest">
+                        <li class="moikalike-app__item">
+                            <a href="#" class="moikalike-app__link">Загрузить <span class="nowrap">в App Store</span></a>
+                        </li>
+                        <li class="moikalike-app__item">
+                            <a href="#" class="moikalike-app__link">Загрузить <span class="nowrap">в Google Play</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="moikalike-app__list">
+                <li class="moikalike-app__item">
+                    <a href="#" class="moikalike-app__link">
+                        <span>Загрузить</span>
+                        <span>в App Store</span></a>
+                </li>
+                <li class="moikalike-app__item">
+                    <a href="#" class="moikalike-app__link">
+                        <span>Загрузить</span>
+                        <span>в Google Play</span></a>
+                </li>
+            </ul>
+        </section>  
+
+        <section class="moikalike-cofe">
+            <h2 class="moikalike-cofe__title">Кофе Мойка Like</h2>
+
+            <p class="moikalike-cofe__text">Пока уходом за вашим авто заняты наши профессионалы, вы можете насладиться зерновым бодрящим кофе от MойкаLike</p>
+
+            <ul class="moikalike-cofe__list">
+                <li class="moikalike-cofe__item">
+                    <i class="moikalike-cofe__icon icon-сofe"></i>
+                    <span class="moikalike-cofe__name">Капучино</span>
+                    <span class="moikalike-cofe__price">150&#8381;</span>
+                </li>
+                <li class="moikalike-cofe__item">
+                    <i class="moikalike-cofe__icon icon-сofe"></i>
+                    <span class="moikalike-cofe__name">Латте</span>
+                    <span class="moikalike-cofe__price">150&#8381;</span>
+                </li>
+                <li class="moikalike-cofe__item">
+                    <i class="moikalike-cofe__icon icon-сofe"></i>
+                    <span class="moikalike-cofe__name">Американо</span>
+                    <span class="moikalike-cofe__price">150&#8381;</span>
+                </li>
+                <li class="moikalike-cofe__item">
+                    <i class="moikalike-cofe__icon icon-сofe"></i>
+                    <span class="moikalike-cofe__name">Капучино</span>
+                    <span class="moikalike-cofe__price">150&#8381;</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="moikalike-form">
+            <h2 class="moikalike-form__title">Запись на мойку</h2>
+            <form action="#">
+                <ul class="moikalike-form__list">
+                    <li class="moikalike-form__item-btn" id="item-btn-one">
+                        <span>1/2</span>
+                        <span>Выбор услуги</span>
+                        <i class="icon-arrow icon-arrow-one"></i>
+                    </li>
+                    <li class="item-content moikalike-form__item-content" id="item-content-one" >
+                        <p class="item-content__text">Можно выбрать любую услугу, мы скорректируем по телефону</p>
+                        <div class="item-content-wrap">
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                            <label class="service-item">
+                                <span class="service-item__name">Услуга 1</span>
+                                <span class="service-item__wrap">
+                                    <span class="service-item__time"><i class="service-item__icon icon-clock"></i>45 мин</span>
+                                    <span class="service-item__price">330<span>&#8381;</span></span>
+                                    <input class="service-item__input" type="checkbox">
+                                    <span class="service-item__checkbox">Выбрать</span>
+                                </span>
+                            </label>
+                        </div>
+                        <button class="hidden-btn item-content__hidden-btn" type="button">
+                            <span class="hidden-btn-open hidden-btn--active">Больше услуг</span>
+                            <span class="hidden-btn-close">Свернуть</span>
+                        </button>
+                    </li>
+                    <li class="moikalike-form__item-btn" id="item-btn-two">
+                        <span>2/2</span>
+                        <span>Подтверждение записи</span>
+                        <i class="icon-arrow icon-arrow-two"></i>
+                    </li>
+                    <li class="item-content moikalike-form__item-content" id="item-content-two">
+                        <ul class="design">
+                            <li class="design__item"><i class="design__icon icon-date-solid"></i>9 апреля<span>пятница</span></li>
+                            <li class="design__item"><i class="design__icon icon-time-filled"></i>45 минут</li>
+                            <li class="design__item"><i class="design__icon icon-timer-sand-full"></i>16:00</li>
+                            <li class="design__item"><i class="design__icon icon-pricetags"></i>330&#8381;</li>
+                        </ul>
+                        <div class="feedback-form">
+                            <p class="feedback-form__text">Для завершения бронирования оставьте свои контакты. Наш менеджер свяжется для подтверждения или корректировки заказа.</p>
+                            <input class="feedback-form__input" type="text" placeholder="Ваше имя">
+                            <input class="feedback-form__input" type="text" placeholder="Ваш телефон">
+                            <label class="feedback-form__label">
+                                <input class="feedback-form__checkbox" type="checkbox">
+                                <span class="feedback-form__checkbox-elem"></span>
+                                <span class="feedback-form__checkbox-text">Нажимая кнопку “Оформить заказ” я даю согласие на обработку своих персональных данных</span>
+                            </label>
+                            <button class="feedback-form__btn">Оформить запись</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="moikalike-footer">
+
+        <div class="moikalike-footer__wrap-one">
+            <a class="moikalike-footer__logo" href="#">
+                <picture>
+                    <source type="image/webp" srcset="images/webp/logo-dest.webp" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="images/webp/logo-mob.webp">
+                    <source srcset="images/png/logo-dest.png" media="(min-width: 768px)">
+                    <img src="images/png/logo-mob.png" alt="фото"/>
+                </picture>
+            </a>
+            <ul class="social social--mob moikalike-footer__social">
+                <li class="social__item"><a class="social__link social__link--inst" href="#"><i class="icon-inst"></i><span class="visually-hidden">Инстаграм</span></a></li>
+                <li class="social__item"><a class="social__link social__link--vk" href="#"><i class="icon-vk"></i><span class="visually-hidden">Вконтакте</span></a></li>
+            </ul>
+        </div>
+        <div class="moikalike-footer__wrap-two">
+            <div class="moikalike-footer__wrap-three">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бронирование</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Прайс-лист</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бонусы</a></li>
+                </ul>
+                <ul class="footer-nav">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Политика конфеденциальности</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сертификаты</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Заказать скидочную карту</a></li>
+                </ul>
+            </div>
+            
+            <div class="moikalike-footer__wrap-four">
+
+                <ul class="footer-feedback">
+                    <li class="footer-feedback__title">Работаем круглосуточно</li>
+                    <li class="footer-feedback__item">
+                        <i class="footer-feedback__icon icon-location"></i>
+                        <span class="footer-feedback__text footer-feedback__text--fb"><span>г. Тверь</span><span>ул. Коминтерна 77Б</span></span>
+                    </li>
+                    <li class="footer-feedback__item"><a class="footer-feedback__text" href="#"><i class="footer-feedback__icon icon-phone"></i>+7 (999) 999 99 99</a></li>
+                </ul>
+                <div class="moikalike-footer__wrap-five">
+                    <ul class="social social--dest ">
+                        <li class="social__item"><a class="social__link social__link--inst" href="#"><i class="icon-inst"></i><span class="visually-hidden">Инстаграм</span></a></li>
+                        <li class="social__item"><a class="social__link social__link--vk" href="#"><i class="icon-vk"></i><span class="visually-hidden">Вконтакте</span></a></li>
+                    </ul>
+                    
+                    <ul class="footer-app">
+                        <li class="footer-app__item">
+                            <a href="#" class="footer-app__link">
+                                <span>Загрузить</span>
+                                <span>в App Store</span></a>
+                        </li>
+                        <li class="footer-app__item">
+                            <a href="#" class="footer-app__link">
+                                <span>Загрузить</span>
+                                <span>в Google Play</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script> 
+</body>
+</html>

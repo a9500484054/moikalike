@@ -1,0 +1,290 @@
+.moikalike-footer {
+    padding: 30px;
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    &__wrap-one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+    &__wrap-two {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap-three {
+        margin-right: 10px;
+    }
+    &__wrap-four {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.social {
+    display: flex;
+    &__item:first-child {
+        margin-right: 7px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        &--inst {
+            color:$color-white;
+            font-size: 30px;
+            transition-duration: .5s;
+            &:hover,
+            &:focus {
+                color: $color-main;
+            }
+            &:active {
+                color: $color-white;
+            }
+        }
+        &--vk {
+            background-color: $color-white;
+            border-radius: 5px;
+            color: $color-bg-main;
+            font-size: 13px;
+            transition-duration: .5s;
+            &:hover,
+            &:focus {
+                background: $color-main;
+            }
+            &:active {
+                background: $color-white;
+            }
+
+        }
+    }
+    &--dest {
+        display: none;
+    }
+}
+
+.footer-nav {
+    max-width: 135px;
+    &__item {
+        margin-bottom: 17px;
+
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-whiteFFF;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color: $color-main;
+            
+        }
+        &:active {
+            color: $color-white;
+        }
+    }
+}
+
+.footer-feedback {
+    margin-bottom: 32px;
+    &__title {
+        width: 135px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        letter-spacing: 0.005em;
+        color: $color-whiteFFF;
+        margin-bottom: 25px;
+        
+    }
+    &__item {
+        display: flex;
+    }
+    &__item:nth-child(2) {
+        margin-bottom: 10px;
+    }
+    &__icon {
+        color: $color-white;
+        font-size: 19px;
+        margin-right: 10px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 102%;
+        letter-spacing: 0.03em;
+        color: $color-white;
+        &--fb {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+.footer-app {
+    &__item {
+        margin-bottom: 10px;
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 117px;
+        height: 32px;
+        padding-left: 38px;
+
+        font-family: $font-family--ibm;
+        font-weight: 400;
+        font-size: 10.36px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $color-whiteFFF;
+
+        background-color: $color-bg-main;
+        border: 1px solid $color-whitefff;
+        border-radius: 11px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-repeat: no-repeat;
+        }
+    }
+    &__item:first-child {
+        margin-right: 10px;
+        a {
+            &::after {
+                top: 2px;
+                left: 10px;
+    
+                width: 21px;
+                height: 25px;
+    
+                background-image: url('../images/png/apple.png');
+                background-size: 21px 25px;
+            }
+        }
+    }
+    &__item:last-child {
+        a {
+            &::after {
+                top: 4px;
+                left: 13px;
+    
+                width: 21px;
+                height: 22px;
+    
+                background-image: url('../images/png/google.png');
+                background-size: 21px 22px;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .moikalike-footer {
+        &__wrap-two {
+            justify-content: center;
+        }
+        &__wrap-three {
+            display: flex;
+            margin: 0;
+            padding-left: 50px;
+            
+        }
+        &__wrap-four {
+            flex-direction: row;
+        }
+        &__wrap-five {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .footer-feedback {
+        &__title {
+            margin-bottom: 43px;
+        }
+    }
+    .social {
+        &--dest {
+            display: flex;
+            margin-bottom: 43px;
+        }
+        &--mob {
+            display: none;
+        }
+    }
+
+    .footer-nav {
+        margin-right: 85px;
+    }
+    .footer-feedback {
+        margin: 0;
+        margin-right: 65px;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .moikalike-footer {
+        padding: 50px;
+    }
+    .footer-nav {
+        max-width: 231px;
+        margin-right: 100px;
+        &__link {
+            font-size: 17px;
+        }
+    }
+    .footer-feedback {
+        margin-right: 100px;
+    }
+
+    .footer-app {
+        &__link {
+            flex-direction: row;
+            align-items: center;
+            width: 192px;
+            height: 36px;
+            padding-left: 38px;
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                background-repeat: no-repeat;
+            }
+        }
+        &__item:first-child {
+            margin-right: 10px;
+            a {
+                &::after {
+                    top: 3px;
+                    left: 27px;                
+                }
+            }
+        }
+        &__item:last-child {
+            a {
+                &::after {
+                    top: 7px;
+                    left: 29px;
+                }
+            }
+        }
+    }
+}
